@@ -1,47 +1,89 @@
-iScreen" class="screen">
-  <div class="page-title">
-    <span class="step">AI STUDY ASSISTANT</span>
-    <h2>Ask StudyHub 🤖</h2>
-    <p>Ask a school question and StudyHub will explain it at your class level.</p>
-  </div>
-  <div class="ai-layout">
-    <div class="ai-panel">
-      <div class="ai-controls">
-        <select id="aiBoard">
-          <option>CBSE</option>
-          <option>ICSE / CISCE</option>
-        </select>
-        <select id="aiClass">
-          <option value="8">Class 8</option>
-          <option value="1">Class 1</option><option value="2">Class 2</option>
-          <option value="3">Class 3</option><option value="4">Class 4</option>
-          <option value="5">Class 5</option><option value="6">Class 6</option>
-          <option value="7">Class 7</option><option value="9">Class 9</option>
-          <option value="10">Class 10</option><option value="11">Class 11</option>
-          <option value="12">Class 12</option>
-        </select>
-        <input id="aiSubject" placeholder="Subject (e.g. Physics)">
-      </div>
-      <div id="chatBox" class="chat-box">
-        <div class="chat-msg assistant"><b>StudyHub AI</b><span>Hi! Ask me a question like “Explain friction in simple words” or “Solve 2x + 5 = 17 step by step.”</span></div>
-      </div>
-      <div class="ai-input-row">
-        <textarea id="aiQuestion" rows="2" placeholder="Type your question here..."></textarea>
-        <button id="askAiBtn" onclick="askStudyHub()">Ask</button>
-      </div>
-      <p class="ai-note">AI answers can make mistakes. Always check important exam answers against your textbook/teacher.</p>
-    </div>
-    <div class="ai-examples">
-      <h3>Try asking</h3>
-      <button onclick="fillAI('Explain photosynthesis in simple words.')">Explain photosynthesis</button>
-      <button onclick="fillAI('Solve 3x + 7 = 22 step by step.')">Solve an equation</button>
-      <button onclick="fillAI('What is the difference between mass and weight?')">Compare two concepts</button>
-      <button onclick="fillAI('Give me 5 MCQs on this subject with answers.')">Make MCQs</button>
-    </div>
-  </div>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyHub — Learn Smarter</title>
+  <meta name="description" content="StudyHub - CBSE and ICSE study platform">
+  <link rel="stylesheet" href="style.css">
+</head>
 
-<footer><b>StudyHub</b><span>Learn • Revise • Improve</span></footer>
+<body>
+
+<header class="topbar">
+  <div class="logo" onclick="goHome()">
+    <span class="logo-box">S</span>
+    <span>Study<span>Hub</span></span>
+  </div>
+
+  <div class="header-actions">
+    <button onclick="goHome()" title="Home">🏠</button>
+    <button onclick="focusSearch()" title="Search">🔎</button>
+    <button onclick="toggleDark()" title="Dark mode">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="breadcrumb" id="breadcrumb">
+    <button onclick="goHome()">Home</button>
+  </div>
+
+  <section id="app"></section>
+
+</main>
+
+<footer>
+  <h2>Study<span>Hub</span></h2>
+  <p>Learn smarter. Study better. Achieve more. 🚀</p>
+  <p class="copyright">© 2026 StudyHub</p>
+</footer>
+
 <script src="script.js"></script>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudyHub — Learn Smarter</title>
+  <meta name="description" content="StudyHub - CBSE and ICSE study platform">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="logo" onclick="goHome()">
+    <span class="logo-box">S</span>
+    <span>Study<span>Hub</span></span>
+  </div>
+
+  <div class="header-actions">
+    <button onclick="goHome()" title="Home">🏠</button>
+    <button onclick="focusSearch()" title="Search">🔎</button>
+    <button onclick="toggleDark()" title="Dark mode">🌙</button>
+  </div>
+</header>
+
+<main>
+
+  <div class="breadcrumb" id="breadcrumb">
+    <button onclick="goHome()">Home</button>
+  </div>
+
+  <section id="app"></section>
+
+</main>
+
+<footer>
+  <h2>Study<span>Hub</span></h2>
+  <p>Learn smarter. Study better. Achieve more. 🚀</p>
+  <p class="copyright">© 2026 StudyHub</p>
+</footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>
